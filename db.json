@@ -1,0 +1,104 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "clients": [
+    {
+      "firstname": "Margie",
+      "lastname": "Muriithi",
+      "idno": 31558214,
+      "dob": "1994-04-21T21:00:00.000Z",
+      "gender": "female",
+      "phonenumber": 707759150,
+      "email": "marymuriithi@gmail",
+      "fname": "Martha",
+      "lname": "Wanjiru",
+      "phone": 714995039,
+      "relation": "Mother",
+      "fname1": "",
+      "lname1": "",
+      "phone1": "",
+      "relation1": "",
+      "id": 4
+    },
+    {
+      "firstname": "Ann",
+      "lastname": "Jane",
+      "idno": 35645654,
+      "dob": "1997-12-27T21:00:00.000Z",
+      "gender": "female",
+      "phonenumber": 717973573,
+      "email": "ann@gmail.com",
+      "fname": "",
+      "lname": "",
+      "phone": "",
+      "relation": "",
+      "fname1": "",
+      "lname1": "",
+      "phone1": "",
+      "relation1": "",
+      "id": 6
+    }
+  ],
+  "products": [
+    {
+      "category": "",
+      "pname": "",
+      "start": "",
+      "end": "",
+      "amount": "",
+      "duration": "",
+      "id": 1
+    },
+    {
+      "category": "Life",
+      "pname": "Elimu",
+      "start": "2023-03-30T21:00:00.000Z",
+      "end": "2035-01-30T21:00:00.000Z",
+      "amount": "5000",
+      "duration": "12",
+      "id": 2
+    },
+    {
+      "category": "",
+      "pname": "",
+      "start": "",
+      "end": "",
+      "amount": "",
+      "duration": "",
+      "id": 3
+    },
+    {
+      "category": "",
+      "pname": "",
+      "start": "",
+      "end": "",
+      "amount": "",
+      "duration": "",
+      "id": 4
+    },
+    {
+      "category": "",
+      "pname": "",
+      "start": "",
+      "end": "",
+      "amount": "",
+      "duration": "",
+      "id": 5
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+<div mat-dialog-title>
+
+
+<h1>Client Form</h1>
+
+</div>
+<form [formGroup] ="clientForm" (ngSubmit)="onFormSubmit()">
+<div mat-dialog-content class="content">
+    <h2>Personal Details</h2>
+    <div class="row">
+    <mat-form-field appearance="outline">
+        <mat-label> First Name</mat-label>
+        <input matInput type="text" formControlName="firstname">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Last Name</mat-label>
+        <input matInput type="text" formControlName="lastname">
+      </mat-form-field>
+    </div>   
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label> ID Number</mat-label>
+            <input matInput type="number" formControlName="idno">
+          </mat-form-field>
+             <mat-form-field appearance="outline">
+            <mat-label>Date of Birth</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="dob">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field> </div>  
+    <div class="row">
+        <mat-radio-group aria-label="Select an option" formControlName="gender">
+            <mat-label>Gender</mat-label>
+            <mat-radio-button value="male">Male</mat-radio-button>
+            <mat-radio-button value="female">Female</mat-radio-button>
+          </mat-radio-group>
+          
+    </div>   
+    <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label> Phone Number</mat-label>
+                <input matInput type="number" formControlName="phonenumber">
+              </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label> Email Address</mat-label>
+                    <input matInput type="email" formControlName="email">
+                  </mat-form-field>
+                </div>  
+ <h2>Next of Kin Details</h2> 
+ <div class="row">
+    <mat-form-field appearance="outline">
+        <mat-label> First Name</mat-label>
+        <input matInput type="text" formControlName="fname">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Last Name</mat-label>
+        <input matInput type="text" formControlName="lname">
+      </mat-form-field>
+      <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label> Phone Number</mat-label>
+            <input matInput type="number" formControlName="phone">
+          </mat-form-field>
+        </div> 
+<div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label> Relationship</mat-label>
+                <input matInput type="text" formControlName="relation">
+              </mat-form-field>
+            </div>  
+    </div>  
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label> First Name</mat-label>
+            <input matInput type="text" formControlName="fname1">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input matInput type="text"formControlName="lname1">
+          </mat-form-field>
+          <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label> Phone Number</mat-label>
+                <input matInput type="number" formControlName="phone1">
+              </mat-form-field>
+            </div> 
+    <div class="row">
+                <mat-form-field appearance="outline">
+                    <mat-label> Relationship</mat-label>
+                    <input matInput type="text" formControlName="relation1">
+                  </mat-form-field>
+                </div>  
+        </div>  
+<h2>Beneficiaries</h2>
+<ol>
+    <li> <mat-form-field appearance="outline">
+        <mat-label> First Name</mat-label>
+        <input matInput type="text">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Last Name</mat-label>
+        <input matInput type="text">
+      </mat-form-field>
+      <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label> Relationship</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
+        </div>  </li>
+        <li> <mat-form-field appearance="outline">
+            <mat-label> First Name</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
+          <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label> Relationship</mat-label>
+                <input matInput type="text">
+              </mat-form-field>
+            </div>  </li>
+            <li> <mat-form-field appearance="outline">
+                <mat-label> First Name</mat-label>
+                <input matInput type="text">
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input matInput type="text">
+              </mat-form-field>
+              <div class="row">
+                <mat-form-field appearance="outline">
+                    <mat-label> Relationship</mat-label>
+                    <input matInput type="text">
+                  </mat-form-field>
+                </div>  </li>
+</ol>
+<h2>Photos</h2>
+
+</div>
+<div mat-dialog-action class="action">
+<button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+<button mat-raised-button color="primary" type="submit">{{data?'Update':'Save'}}</button>
+</div>
+</form>
