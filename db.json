@@ -18,24 +18,6 @@
   },
   "clients": [
     {
-      "firstname": "Margie",
-      "lastname": "Muriithi",
-      "idno": 31558214,
-      "dob": "1994-04-21T21:00:00.000Z",
-      "gender": "female",
-      "phonenumber": 707759150,
-      "email": "marymuriithi@gmail",
-      "fname": "Martha",
-      "lname": "Wanjiru",
-      "phone": 714995039,
-      "relation": "Mother",
-      "fname1": "",
-      "lname1": "",
-      "phone1": "",
-      "relation1": "",
-      "id": 4
-    },
-    {
       "firstname": "Ann",
       "lastname": "Jane",
       "idno": 35645654,
@@ -43,6 +25,24 @@
       "gender": "female",
       "phonenumber": 717973573,
       "email": "ann@gmail.com",
+      "fname": "lizzy",
+      "lname": "queen",
+      "phone": 5695266566,
+      "relation": "sister",
+      "fname1": "lrpopokogw",
+      "lname1": "eqwwryr",
+      "phone1": null,
+      "relation1": "fdzhmhjfdhj",
+      "id": 6
+    },
+    {
+      "firstname": "ADVBG",
+      "lastname": "BZDF",
+      "idno": null,
+      "dob": "2023-02-28T21:00:00.000Z",
+      "gender": "male",
+      "phonenumber": null,
+      "email": "",
       "fname": "",
       "lname": "",
       "phone": "",
@@ -51,19 +51,10 @@
       "lname1": "",
       "phone1": "",
       "relation1": "",
-      "id": 6
+      "id": 7
     }
   ],
   "products": [
-    {
-      "category": "",
-      "pname": "",
-      "start": "",
-      "end": "",
-      "amount": "",
-      "duration": "",
-      "id": 1
-    },
     {
       "category": "Life",
       "pname": "Elimu",
@@ -74,31 +65,78 @@
       "id": 2
     },
     {
+      "firstname": "",
+      "lastname": "",
       "category": "",
       "pname": "",
       "start": "",
       "end": "",
       "amount": "",
       "duration": "",
+      "status": "",
       "id": 3
     },
     {
+      "firstname": "Ann",
+      "lastname": "Jane",
+      "category": "Life",
+      "pname": "Elimu",
+      "start": "2023-03-24T21:00:00.000Z",
+      "end": "2033-03-30T21:00:00.000Z",
+      "amount": "5000",
+      "duration": "",
+      "status": "",
+      "id": 4
+    }
+  ],
+  "issueproducts": [
+    {
+      "firstname": "Mary",
+      "lastname": "Kim",
       "category": "",
-      "pname": "",
+      "pname": "Elimu",
       "start": "",
       "end": "",
       "amount": "",
       "duration": "",
-      "id": 4
+      "status": "",
+      "id": 1
     },
     {
+      "firstname": "sun",
+      "lastname": "yoon",
+      "category": "health",
+      "pname": "afya",
+      "start": "2023-02-28T21:00:00.000Z",
+      "end": "2033-12-30T21:00:00.000Z",
+      "amount": "10000",
+      "duration": "",
+      "status": "",
+      "id": 2
+    },
+    {
+      "firstname": "",
+      "lastname": "",
       "category": "",
       "pname": "",
       "start": "",
       "end": "",
       "amount": "",
       "duration": "",
-      "id": 5
+      "status": "",
+      "id": 3
+    },
+    {
+      "firstname": "Ann",
+      "lastname": "Muriithi",
+      "category": "Life",
+      "pname": "Elimu",
+      "start": "2023-03-24T21:00:00.000Z",
+      "end": "2033-03-24T21:00:00.000Z",
+      "amount": "2000",
+      "duration": "",
+      "status": "",
+      "id": 4
     }
   ]
 }

@@ -10,7 +10,7 @@ import { map, shareReplay } from 'rxjs/operators';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
-  menuItems = ['dashboard', 'clients', 'products', 'issue', 'issued products'];
+  menuItems = ['dashboard', 'clients','client-list', 'products', 'products-list','issue', 'issued products'];
   
 
   ngOnInit() {

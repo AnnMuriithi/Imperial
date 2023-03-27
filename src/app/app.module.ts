@@ -28,11 +28,17 @@ import { DashComponent } from './dash/dash.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import { ProductsComponent } from './products/products.component';
+import { ClientListComponent } from './client-list/client-list.component';
+import { ProductsListComponent } from './products-list/products-list.component';
+import { IssueProductsComponent } from './issue-products/issue-products.component';
+import { IssueProductsListComponent } from './issue-products-list/issue-products-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent,ClientAddEditComponent,DashComponent, ProductsComponent
+    NavComponent,ClientAddEditComponent,DashComponent,
+     ProductsComponent, ClientListComponent, ProductsListComponent, 
+     IssueProductsComponent, IssueProductsListComponent
   ],
   imports: [
     BrowserModule,
