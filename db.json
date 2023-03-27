@@ -74,15 +74,6 @@
   ],
   "products": [
     {
-      "category": "",
-      "pname": "",
-      "start": "",
-      "end": "",
-      "amount": "",
-      "duration": "",
-      "id": 1
-    },
-    {
       "category": "Life",
       "pname": "Elimu",
       "start": "2023-03-30T21:00:00.000Z",
@@ -92,28 +83,34 @@
       "id": 2
     },
     {
-      "firstname": "",
-      "lastname": "",
-      "category": "",
-      "pname": "",
+      "category": "Life",
+      "pname": "Afya",
       "start": "",
       "end": "",
-      "amount": "",
+      "amount": "2000",
       "duration": "",
       "status": "",
       "id": 3
     },
     {
-      "firstname": "Ann",
-      "lastname": "Jane",
-      "category": "Life",
-      "pname": "Elimu",
-      "start": "2023-03-24T21:00:00.000Z",
-      "end": "2033-03-30T21:00:00.000Z",
-      "amount": "5000",
+      "category": "Property",
+      "pname": "Biashara",
+      "start": "",
+      "end": "",
+      "amount": "10000",
       "duration": "",
       "status": "",
       "id": 4
+    },
+    {
+      "category": "Property",
+      "pname": "Automobile",
+      "start": "",
+      "end": "",
+      "amount": "5000",
+      "duration": "",
+      "status": "",
+      "id": 5
     }
   ],
   "issueproducts": [
