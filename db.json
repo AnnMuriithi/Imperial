@@ -18,6 +18,24 @@
   },
   "clients": [
     {
+      "firstname": "Margie",
+      "lastname": "Muriithi",
+      "idno": 31558214,
+      "dob": "1994-04-21T21:00:00.000Z",
+      "gender": "female",
+      "phonenumber": 707759150,
+      "email": "marymuriithi@gmail",
+      "fname": "Martha",
+      "lname": "Wanjiru",
+      "phone": 714995039,
+      "relation": "Mother",
+      "fname1": "",
+      "lname1": "",
+      "phone1": "",
+      "relation1": "",
+      "id": 4
+    },
+    {
       "firstname": "Ann",
       "lastname": "Jane",
       "idno": 35645654,
@@ -55,6 +73,15 @@
     }
   ],
   "products": [
+    {
+      "category": "",
+      "pname": "",
+      "start": "",
+      "end": "",
+      "amount": "",
+      "duration": "",
+      "id": 1
+    },
     {
       "category": "Life",
       "pname": "Elimu",
