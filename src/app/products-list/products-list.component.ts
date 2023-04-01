@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
+import { Products } from '../products';
 import { ProductsComponent } from '../products/products.component';
 import { ProductsService } from '../services/products.service';
 
@@ -12,7 +13,9 @@ import { ProductsService } from '../services/products.service';
   styleUrls: ['./products-list.component.css']
 })
 export class ProductsListComponent implements OnInit {
-  displayedColumns: string[] = ['id','category','pname','start','end','amount','duration','status','action'];
+  public products!: Products[];
+
+  displayedColumns: string[] = ['id','category','pname','amount','duration','action'];
   dataSource!: MatTableDataSource<any>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -24,8 +27,7 @@ export class ProductsListComponent implements OnInit {
     ){}
 
     ngOnInit(): void {
-      
-      this.getProductsList();
+    this.getProductsList();
     }
 
  
