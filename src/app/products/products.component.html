@@ -8,7 +8,7 @@
     <div mat-dialog-content class="content">
       <div class="row">
         <mat-form-field appearance="outline">
-            <mat-label> Product ID</mat-label>
+            <mat-label> Product Category</mat-label>
             <input matInput type="varchar" formControlName="category">
           </mat-form-field>
           <mat-form-field appearance="outline">
@@ -17,17 +17,7 @@
           </mat-form-field>
         </div>
         <div class="row">
-          <mat-form-field appearance="outline">
-            <mat-label>Enter a date range</mat-label>
-            <mat-date-range-input [rangePicker]="picker">
-              <input matStartDate placeholder="Start date" formControlName="start">
-              <input matEndDate placeholder="End date" formControlName="end">
-            </mat-date-range-input>
-            <mat-hint>DD/MM/YYYY – DD/MM/YYYY</mat-hint>
-            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-            <mat-date-range-picker #picker></mat-date-range-picker>
-          </mat-form-field>
-           
+              
         <mat-form-field appearance="outline">
             <mat-label> Amount</mat-label>
             <input matInput type="text" formControlName="amount">
@@ -37,10 +27,7 @@
             <mat-label>Duration</mat-label>
             <input matInput type="text" formControlName="duration">
           </mat-form-field>
-          <mat-form-field appearance="outline">
-            <mat-label>Status</mat-label>
-            <input matInput type="text" formControlName="status">
-          </mat-form-field>
+          
      </div>     
      <div mat-dialog-action class="action">
       <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>

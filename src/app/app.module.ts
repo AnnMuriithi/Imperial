@@ -17,7 +17,7 @@ import { ClientAddEditComponent } from './client-add-edit/client-add-edit.compon
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatRadioModule} from '@angular/material/radio';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import {MatTableModule} from '@angular/material/table';
@@ -32,6 +32,7 @@ import { ClientListComponent } from './client-list/client-list.component';
 import { ProductsListComponent } from './products-list/products-list.component';
 import { IssueProductsComponent } from './issue-products/issue-products.component';
 import { IssueProductsListComponent } from './issue-products-list/issue-products-list.component';
+import { ClientsService } from './services/clients.service';
 
 @NgModule({
   declarations: [
@@ -64,9 +65,10 @@ import { IssueProductsListComponent } from './issue-products-list/issue-products
     MatMenuModule,
     MatGridListModule,
     MatCardModule,
+    FormsModule,
 
   ],
-  providers: [],
+  providers: [ClientsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

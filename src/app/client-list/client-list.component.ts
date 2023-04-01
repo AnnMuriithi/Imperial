@@ -6,6 +6,8 @@ import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 import { IssueProductsComponent } from '../issue-products/issue-products.component';
+import { Clients } from '../clients';
+
 
 
 @Component({
@@ -14,6 +16,8 @@ import { IssueProductsComponent } from '../issue-products/issue-products.compone
   styleUrls: ['./client-list.component.css']
 })
 export class ClientListComponent implements OnInit{
+  public clients!: Clients[];
+  
   displayedColumns: string[] = ['id', 'firstname', 'lastname', 'idno','gender', 'dob', 'phonenumber', 
   'email', 'fname', 'lname','phone','relation', 'fname1', 'lname1','phone1', 'relation1','action'];
   dataSource!: MatTableDataSource<any>;
@@ -28,8 +32,8 @@ export class ClientListComponent implements OnInit{
   
     ){}
 
-    ngOnInit(): void {
-      this.getClientList();
+    ngOnInit(){
+      this.getAll();
       
     }
     openIssueProductsForm(){
@@ -37,7 +41,7 @@ export class ClientListComponent implements OnInit{
       dialogRef.afterClosed().subscribe({
         next:(val)=> { 
           if(val){
-            this.getClientList();
+            this.getAll();
           }
         }
       });
@@ -47,13 +51,13 @@ export class ClientListComponent implements OnInit{
       dialogRef.afterClosed().subscribe({
         next:(val)=> { 
           if(val){
-            this.getClientList();
+            this.getAll();
           }
         }
       });
       }
-      getClientList(){
-        this._clientsService.getClientList().subscribe({
+      getAll(): void {
+        this._clientsService.getAllClient().subscribe({
           next:(res) => {
             this.dataSource = new MatTableDataSource(res);
             this.dataSource.sort = this.sort;
@@ -71,11 +75,11 @@ export class ClientListComponent implements OnInit{
           this.dataSource.paginator.firstPage();
         }
       }
-      deleteClient(id: number) {
-        this._clientsService.deleteClient(id).subscribe({
+      deleteClient(idno:number ){
+        this._clientsService.deleteClient(idno).subscribe({
           next: (res) => {
             alert('Client deleted!');
-            this.getClientList();
+            this.getAll();
           },
           error: console.log,
         });
@@ -87,7 +91,7 @@ export class ClientListComponent implements OnInit{
         dialogRef.afterClosed().subscribe({
           next:(val)=> { 
             if(val){
-              this.getClientList();
+              this.getAll();
             }
           }
         });
@@ -95,7 +99,7 @@ export class ClientListComponent implements OnInit{
         dialogRef.afterClosed().subscribe({
           next: (val) => {
             if (val) {
-              this.getClientList();
+              this.getAll();
             }
           },
         });

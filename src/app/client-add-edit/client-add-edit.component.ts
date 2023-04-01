@@ -44,7 +44,7 @@ export class ClientAddEditComponent implements OnInit{
     if (this.clientForm.valid) {
       if (this.data) {
         this._clientsService
-          .updateClient(this.data.id, this.clientForm.value)
+          .updateClient(this.data.idno,this.clientForm.value)
           .subscribe({
             next: (val: any) => {
               alert('Client Details Updated');
@@ -57,7 +57,7 @@ export class ClientAddEditComponent implements OnInit{
       } else {
         this._clientsService.addClient(this.clientForm.value).subscribe({
           next: (val: any) => {
-            alert('Client Added Updated');
+            alert('Client Added');
             this._dialogRef.close(true);
           },
           error: (err: any) => {

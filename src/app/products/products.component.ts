@@ -21,11 +21,9 @@ export class ProductsComponent implements OnInit {
     this.productsForm = this._productsfb.group({
       category:'',
       pname:'',
-      start:'',
-      end:'',
       amount:'',
       duration:'',
-      status:''
+      
       
     })
 }
@@ -49,7 +47,7 @@ onFormSubmit() {
     } else {
       this._productsService.addProduct(this.productsForm.value).subscribe({
         next: (val: any) => {
-          alert('Product Updated');
+          alert('Product Added');
           this._dialogRef.close(true);
         },
         error: (err: any) => {

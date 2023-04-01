@@ -52,7 +52,7 @@ onFormSubmit() {
     } else {
       this._issueproductsService.addIssuedProducts(this.issueproductsForm.value).subscribe({
         next: (val: any) => {
-          alert('Product Updated');
+          alert('Product Issued');
           this._dialogRef.close(true);
         },
         error: (err: any) => {
