@@ -103,6 +103,34 @@
       </ng-container>
       </mat-list-item> 
     </mat-list>
+        <ng-container matColumnDef="bfname">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>First Name </th>
+      <td mat-cell *matCellDef="let row"> {{row.bfname}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="bflname">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Last Name </th>
+      <td mat-cell *matCellDef="let row"> {{row.bflname}} </td>
+    </ng-container>
+    <ng-container matColumnDef="rel">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Relationship</th>
+      <td mat-cell *matCellDef="let row"> {{row.rel}} </td>
+    </ng-container>
+    <ng-container matColumnDef="bfname1">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>First Name </th>
+      <td mat-cell *matCellDef="let row"> {{row.bfname1}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="bflname1">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Last Name </th>
+      <td mat-cell *matCellDef="let row"> {{row.bflname1}} </td>
+    </ng-container>
+    <ng-container matColumnDef="rel1">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Relationship</th>
+      <td mat-cell *matCellDef="let row"> {{row.rel1}} </td>
+    </ng-container>
       <ng-container matColumnDef="action">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Action</th>
         <td mat-cell *matCellDef="let row"> 
