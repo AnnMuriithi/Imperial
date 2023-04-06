@@ -25,13 +25,21 @@ public class Clients implements Serializable {
     private String lname1;
     private  String phone1;
     private String relation1;
+    private String bfname;
+    private String bflname;
+    private  String rel;
+    private String bfname1;
+    private String bflname1;
+    private  String rel1;
 
     public Clients() {
     }
 
+
     public Clients(String id, String firstname, String lastname, Long idno, String dob, String gender, String phonenumber, String email,
                    String fname,
-                   String lname, String phone, String relation, String fname1, String lname1, String phone1, String relation1) {
+                   String lname, String phone, String relation, String fname1, String lname1, String phone1, String relation1,
+                   String bfname, String bflname, String rel, String bfname1, String bflname1, String rel1) {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
@@ -48,6 +56,12 @@ public class Clients implements Serializable {
         this.lname1 = lname1;
         this.phone1 = phone1;
         this.relation1 = relation1;
+        this.bfname= bfname;
+        this.bflname= bflname;
+        this.rel=rel;
+        this.bfname1= bfname1;
+        this.bflname1= bflname1;
+        this.rel1=rel1;
     }
 
     public String getId() {
@@ -178,6 +192,55 @@ public class Clients implements Serializable {
         this.relation1 = relation1;
     }
 
+    public String getBfname() {
+        return bfname;
+    }
+
+    public void setBfname(String bfname) {
+        this.bfname = bfname;
+    }
+
+    public String getBflname() {
+        return bflname;
+    }
+
+    public void setBflname(String bflname) {
+        this.bflname = bflname;
+    }
+
+    public String getRel() {
+        return rel;
+    }
+
+    public void setRel(String rel) {
+        this.rel = rel;
+    }
+
+    public String getBfname1() {
+        return bfname1;
+    }
+
+    public void setBfname1(String bfname1) {
+        this.bfname1 = bfname1;
+    }
+
+    public String getBflname1() {
+        return bflname1;
+    }
+
+    public void setBflname1(String bflname1) {
+        this.bflname1 = bflname1;
+    }
+
+    public String getRel1() {
+        return rel1;
+    }
+
+    public void setRel1(String rel1) {
+        this.rel1 = rel1;
+    }
+
+
     @Override
     public String toString() {
         return "Clients{" +
@@ -197,9 +260,19 @@ public class Clients implements Serializable {
                 ", lname1='" + lname1 + '\'' +
                 ", phone1='" + phone1 + '\'' +
                 ", relation1='" + relation1 + '\'' +
+                "bfname='" + bfname + '\'' +
+                ", bflname='" + bflname + '\'' +
+                ", rel='" + rel + '\'' +
+                ", bfname1='" + bfname1 + '\'' +
+                ", bflname1='" + bflname1 + '\'' +
+                ", rel1='" + rel1 + '\'' +
                 '}';
     }
 }
+
+
+
+
 
 
 
