@@ -19,7 +19,8 @@ export class ClientListComponent implements OnInit{
   public clients!: Clients[];
   
   displayedColumns: string[] = ['id', 'firstname', 'lastname', 'idno','gender', 'dob', 'phonenumber', 
-  'email', 'fname', 'lname','phone','relation', 'fname1', 'lname1','phone1', 'relation1','action'];
+  'email', 'fname', 'lname','phone','relation', 'fname1', 'lname1','phone1', 'relation1',
+    'bfname','bflname','rel','bfname1','bflname1','rel1','action'];
   dataSource!: MatTableDataSource<any>;
 
   
