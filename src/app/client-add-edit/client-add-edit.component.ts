@@ -34,6 +34,12 @@ export class ClientAddEditComponent implements OnInit{
       lname1:'',
       phone1:'',
       relation1:'',
+      bfname:'',
+      bflname:'',
+      rel:'',
+      bfname1:'',
+      bflname1:'',
+      rel1:'',
   
     })
   }
